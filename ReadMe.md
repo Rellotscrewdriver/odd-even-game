@@ -1,46 +1,44 @@
-# Project Template
-this repo contains the boilerplate for my future projects so I don't have to create a project from scratch
+# Odd even game
+it's a game where you play the portable version of cricket with hands
 
 ## Project Structure
-- `include` is for containing header files
-- `docs` is to contains doxyfile for documentation generator
-- `libs` is for containing external libraries' source code which builds with the main project
-- `src` is containing the main program's source code
-- `tests` is for containing unit tests to test various parts of the software
-
-## Toolset
-- CMake for build system generator
-- Doxygen for generating documentation
-- Make / Ninja are used for build system
-- Googletest for testing and mocking
-- Github Actons for CI/CD
+- `.github` contains CI file and templates for issues and pull request
+- `docs` contains documentation
+- `src` contains the main program's source code
+- `tests` contains unit tests to test various parts of the software
 
 ## Setting up the project
 
 ### Dependencies
-- CMake
-- GNU make / Ninja
-- GCC / Clang / MSVC
-- AStyle
-- Doxygen
+- GNU make
+- mkdocs
+- pytest
+- tabulate(optional for now)
 
 ### Setup
-clone the repo with submodules
+clone the repo
 ```
-git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-template.git
-```
-
-goto the cloned repo and configure the project
-```
-cd my-project-template
-cmake -S . -B build
+git clone 
 ```
 
-build the project
+go to the cloned project and execute it using 
 ```
-cmake --build build
+make run
 ```
-then run the 'template' or 'utest' program
+
+### Generating documentation
+
+hotrun the documentation
+```
+mkdocs run
+```
+
+build the documentation
+```
+mkdocs bulid
+mkdocs serve
+```
+now type `localhost:8000` in your browser
 
 ##  Contributions
 
@@ -50,7 +48,7 @@ and <a href="https://github.com/Rellotscrewdriver/my-project-template/blob/maste
 
 ## Screenshots
 People usually like to see how it looks before downloading the product.
-<img src="">
+currently the screenshots are not available
 
 ## COPYRIGHT
 
