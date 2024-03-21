@@ -10,3 +10,7 @@ def compreToss(playaChoice):
         print("computer chose odd")
     else:
         print("invalid choice, try again")
+def tossMatch():
+    print("draw from range 1 to 6")
+    draw = int(input("your input: "))
+    return draw
