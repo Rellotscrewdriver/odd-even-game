@@ -1,4 +1,6 @@
 import toss
+import venue
+import com
 
 # compares the results from the draw of player and computer by totaling both numbers and determining whether odd came or even
 def compreResults(plyerChoice, cpuChoice):
@@ -14,5 +16,7 @@ def compreResults(plyerChoice, cpuChoice):
 def determineWinner(result):
     if toss.plyChoice == result:
         print("player wins")
+        venue.plyChosePos()
     else:
+        com.comChosePos()
         print("computer wins")
