@@ -9,13 +9,15 @@ lint:             ## Run pep8, black, mypy linters.
 	$(ENV_PREFIX)mypy --ignore-missing-imports project_name/
 
 .PHONY: test
-test:             ## Run tests and generate coverage report.
+test:             ## Run tests
+	@$(ENV_PREFIX)cd tests 
 	@$(ENV_PREFIX)pytest
 
 .PHONY: clean
 clean:            ## Clean unused files.
 	@find ./ -name '*.pyc' -exec rm -f {} \;
 	@find ./ -name '__pycache__' -exec rm -rf {} \;
+	@find ./ -name '.pytest_cache' -exec rm -rf {} \;
 	@find ./ -name 'Thumbs.db' -exec rm -f {} \;
 	@find ./ -name '*~' -exec rm -f {} \;
 	@rm -rf .cache
@@ -31,7 +33,7 @@ clean:            ## Clean unused files.
 .PHONY: docs
 docs:             ## Build the documentation.
 	@echo "building documentation ..."
-	@$(ENV_PREFIX)mkdocs build;
+	@$(ENV_PREFIX)mkdocs serve;
 
 .PHONY: run
 run:             ## execute the project
