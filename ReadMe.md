@@ -1,11 +1,5 @@
 # Odd even game
-it's a game where you play the portable version of cricket with hands
-
-## Project Structure
-- `.github` contains CI file and templates for issues and pull request
-- `docs` contains documentation
-- `src` contains the main program's source code
-- `tests` contains unit tests to test various parts of the software
+it's a game where you play the portable version of cricket with hands but with computer
 
 ## Setting up the project
 
@@ -13,7 +7,6 @@ it's a game where you play the portable version of cricket with hands
 - GNU make
 - mkdocs
 - pytest
-- tabulate(optional for now)
 
 ### Setup
 clone the repo
@@ -30,7 +23,7 @@ make run
 
 hotrun the documentation
 ```
-mkdocs run
+mkdocs serve
 ```
 
 build the documentation
