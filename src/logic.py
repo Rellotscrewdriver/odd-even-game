@@ -7,20 +7,20 @@ import com
 def compreResults(plyerChoice, cpuChoice):
     finlResult = (plyerChoice + cpuChoice) % 2 == 0 
     if finlResult == True:
-        print("even came from the results")
+        print("\neven came from the results")
         return "even"
     else:
-        print("odd came from the results")
+        print("\nodd came from the results")
         return "odd"
 
 
 # decides the final result
 def determineWinner(result):
     if toss.plyChoice == result:
-        print("player wins")
+        print("player wins\n")
         venue.plyChosePos()
     else:
-        print("computer wins")
+        print("computer wins\n")
         com.comChosePos()
 
 
