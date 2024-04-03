@@ -11,7 +11,8 @@ it's a game where you play the portable version of cricket with hands but with c
 ### Setup
 clone the repo
 ```
-git clone 
+git clone https://github.com/Rellotscrewdriver/odd-even-game.git
+cd odd-even-game 
 ```
 
 go to the cloned project and execute it using 
