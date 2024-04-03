@@ -21,19 +21,19 @@ def startPlaying(plyChoice):
         plyBattin()
         print("now it's time to switch sides")
         comBattin()
-        logic.determineRealWinner(plyScore, comScore)
+        print(logic.determineRealWinner(plyScore, comScore))
     elif plyChoice == "ball":
         comBattin()
         print("now it's time to switch sides")
         plyBattin()
-        logic.determineRealWinner(plyScore, comScore)
+        print(logic.determineRealWinner(plyScore, comScore))
 
 def plyBattin(): 
     global plyScore
     while True:
         batScore = int(input("Enter a number between 1 to 6: "))
         ballScore = com.compTossDraw()
-        print("computer draws ", ballScore)
+        print("computer draws", ballScore)
         if batScore == ballScore:
             print("you lose, your score was: ", plyScore)
             break
@@ -47,7 +47,7 @@ def comBattin():
     while True:
         ballScore = int(input("Enter a number between 1 to 6: "))
         batScore = com.compTossDraw()
-        print("computer draws ", batScore)
+        print("computer draws", batScore)
         if batScore == ballScore:
             print("computer lose, his score was:", comScore)
             break

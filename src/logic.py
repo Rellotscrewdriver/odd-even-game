@@ -13,6 +13,7 @@ def compreResults(plyerChoice, cpuChoice):
         print("odd came from the results")
         return "odd"
 
+
 # decides the final result
 def determineWinner(result):
     if toss.plyChoice == result:
@@ -21,14 +22,14 @@ def determineWinner(result):
     else:
         print("computer wins")
         com.comChosePos()
-        
+
 
 def determineRealWinner(plyScore, comScore):
     print("\nScoreBoard: ")
     print("Player: ", plyScore, "| Computer: ", comScore)
     if plyScore > comScore:        
-        print("PLAYER WIN!!! CONGRATS")
+        return "PLAYER WIN!!! CONGRATS"
     elif plyScore < comScore:
-        print("YOU LOSE!!")
+        return "YOU LOSE!!"
     else:
-        print("TIED, REMATCH NEEDED")
+        return "TIED, REMATCH NEEDED"
