@@ -3,7 +3,6 @@ import logic
 import com
 
 print("Welcome to the portable cricket session!")
-print("I am your host, lucky. which is lucky")
 
 while True:
     toss.startTossing()
