@@ -14,6 +14,7 @@ def compreToss():
     else:
         print("\ninvalid choice, try again")
 
+# prompt the user to input from 1 to 6
 def tossMatch():
     print("\ndraw from range 1 to 6")
     draw = int(input("your input: "))

@@ -23,7 +23,7 @@ def determineWinner(result):
         print("computer wins\n")
         com.comChosePos()
 
-
+# determine which one scored the highest
 def determineRealWinner(plyScore, comScore):
     print("\nScoreBoard: ")
     print("Player: ", plyScore, "| Computer: ", comScore)

@@ -41,7 +41,6 @@ def plyBattin():
             plyScore += batScore
             print("\nyou win, your score is now: ", plyScore)
 
-
 def comBattin():
     global comScore
     while True:
