@@ -11,9 +11,9 @@ def comChosePos():
     chooseVenue = comChooseVenue()
     if chooseVenue == 1:
         print("computer chose batting, you had to choose balling")
-        venue.startPlaying("ball")
+        venue.startPlaying(False)
     elif chooseVenue == 2:
         print("computer chose balling, you had to choose batting")
-        venue.startPlaying("bat")       
+        venue.startPlaying(True)       
     else:
         print("jesus, really random integer?")

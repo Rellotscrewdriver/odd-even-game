@@ -9,20 +9,18 @@ def plyChosePos():
     chooseVenue = input("your input: ")
     if chooseVenue.lower() == "batting":
         print("\nplayer chose batting, computer had to choose balling")
-        startPlaying("bat")
-        # here computer should choose balling
+        startPlaying(True) # here computer should choose balling
     elif chooseVenue.lower() == "balling":
         print("\nplayer chose balling, computer had to choose batting")
-        startPlaying("ball")
-        # here computer should choose batting
+        startPlaying(False) # here computer should choose batting
 
 def startPlaying(plyChoice):
-    if plyChoice == "bat":
+    if plyChoice == True:
         plyBattin()
         print("\nnow it's time to switch sides\nnow the computer is batting now")
         comBattin()
         print(logic.determineRealWinner(plyScore, comScore))
-    elif plyChoice == "ball":
+    elif plyChoice == False:
         comBattin()
         print("\nnow it's time to switch sides\nnow the player is batting now")
         plyBattin()
