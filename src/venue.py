@@ -7,11 +7,11 @@ comScore = 0
 def plyChosePos():
     print("choose batting or balling?")
     chooseVenue = input("your input: ")
-    if chooseVenue == "batting":
+    if chooseVenue.lower() == "batting":
         print("\nplayer chose batting, computer had to choose balling")
         startPlaying("bat")
         # here computer should choose balling
-    elif chooseVenue == "balling":
+    elif chooseVenue.lower() == "balling":
         print("\nplayer chose balling, computer had to choose batting")
         startPlaying("ball")
         # here computer should choose batting

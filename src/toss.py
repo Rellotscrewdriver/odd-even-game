@@ -7,9 +7,9 @@ def startTossing():
 
 # compares the toss and determines what computer will choose next
 def compreToss():
-    if plyChoice == "odd" or plyChoice == "Odd":
+    if plyChoice.lower() == "odd":
         print("\ncomputer chose even")
-    elif plyChoice == "even" or plyChoice == "Even":
+    elif plyChoice.lower() == "even":
         print("\ncomputer chose odd")
     else:
         print("\ninvalid choice, try again")

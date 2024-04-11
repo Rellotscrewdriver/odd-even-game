@@ -16,7 +16,7 @@ def compreResults(plyerChoice, cpuChoice):
 
 # decides the final result
 def determineWinner(result):
-    if toss.plyChoice == result:
+    if toss.plyChoice.lower() == result:
         print("player wins\n")
         venue.plyChosePos()
     else:
