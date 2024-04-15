@@ -37,7 +37,7 @@ def plyBattin():
             break
         else:
             plyScore += batScore
-            print("\nyou win, your score is now: ", plyScore)
+            print("\nyou win, your score is now:", plyScore)
 
 def comBattin():
     global comScore
