@@ -1,3 +1,33 @@
 site_name: odd-even game
-theme: 
+theme:
   name: material
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-2 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  features:
+    - header.autohide
+
+copyright: Copyright &copy; 2024 Rellot's Screwdriver
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/users/481829350749110293
+    - icon: fontawesome/brands/github
+      link: https://github.com/Rellotscrewdriver/odd-even-game
+    - icon: fontawesome/brands/itch-io
+      link: https://rellotscrewdriver.itch.io
+  generator: false
+
+nav:
+- index.md
+- setup.md
+- how-to-play.md

@@ -1,17 +1,8 @@
-# Welcome to MkDocs
+# Odd Even game
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+a game where you play the portable version of cricket with hands and your oppoent is your computer
 
-## Commands
+## Why?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+this game was popular along my classmates when getting a bat and ball is scare<br>
+i don't know who invented it but I always thought why not make a game based of this? 
