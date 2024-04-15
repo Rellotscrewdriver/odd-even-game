@@ -2,6 +2,7 @@
 
 ## Dependencies
 - GNU make
+- python 3
 
 ## Setup
 clone the repo
@@ -27,4 +28,7 @@ build the documentation and run
 mkdocs bulid
 mkdocs serve
 ```
-now type `localhost:8000` in your browser
+now type `localhost:8000` in your browser or click the link that mkdocs provide you
+
+# running unit test
+just type `pytest` to see the results
