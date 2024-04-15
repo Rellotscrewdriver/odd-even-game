@@ -27,7 +27,7 @@ hotrun the documentation
 mkdocs serve
 ```
 
-build the documentation
+build the documentation and run
 ```
 mkdocs bulid
 mkdocs serve
@@ -39,10 +39,6 @@ now type `localhost:8000` in your browser
 We explicitly welcome outside contributors.
 you can read our <a href="https://github.com/Rellotscrewdriver/my-project-template/blob/master/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT</a> for rules</br>
 and <a href="https://github.com/Rellotscrewdriver/my-project-template/blob/master/CONTRIBUTING.md">CONTRIBUTING</a> for contribution guidelines and coding style
-
-## Screenshots
-People usually like to see how it looks before downloading the product.
-currently the screenshots are not available
 
 ## COPYRIGHT
 
